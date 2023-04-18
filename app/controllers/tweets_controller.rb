@@ -2,26 +2,5 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.all
   end
-<<<<<<< Updated upstream
-=======
-
-  def def new
-    @tweets = Tweet.new
-  end
-
-  def create
-    Tweet.create(tweet_params)
-  end
-
-  def destroy
-    tweet = Tweet.find(params[:id])
-    tweet.destroy
-  end
-
-  private
-  def tweet_params
-    params.require(:tweet).permit(:name, :image, :text)
-  end
->>>>>>> Stashed changes
 end
 
